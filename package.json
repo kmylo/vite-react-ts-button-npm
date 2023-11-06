@@ -1,7 +1,11 @@
 {
-  "name": "kmylo-vite-react-ts-button",
+  "name": "@kmylo/vite-react-ts-button-npm",
   "private": false,
-  "version": "0.0.5",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/vite-react-ts-button-npm"
+  },
+  "version": "0.0.1",
+  "description": "A simple template for a custom React component library",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -16,9 +20,6 @@
   "files": [
     "/dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
