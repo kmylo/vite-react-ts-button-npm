@@ -1,7 +1,12 @@
-import React, { useCallback } from "react";
-import "../index.css";
+import { ReactNode, useCallback } from "react";
+import "../../index.css";
 
-export const Button = () => {
+interface Props {
+  children?: ReactNode;
+  props?: any;
+}
+
+export const Button = ({ children, ...props }: Props) => {
   const onClick = useCallback(() => {
     console.log("Vite + React + TypeScript + Tailwind = ❤️");
   }, []);
@@ -11,7 +16,7 @@ export const Button = () => {
       onClick={onClick}
       className={`bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded`}
     >
-      Vite Btn npm
+      {children ? children : "Vite Btn npm"}
     </button>
   );
 };

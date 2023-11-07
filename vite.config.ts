@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
+import eslint from "vite-plugin-eslint";
 import dts from "vite-plugin-dts";
 import path from "path";
 
@@ -22,5 +23,5 @@ export default defineConfig({
     sourcemap: true,
     emptyOutDir: true,
   },
-  plugins: [react(), dts()],
+  plugins: [react(), eslint(), dts()],
 });

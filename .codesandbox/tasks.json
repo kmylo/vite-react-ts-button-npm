@@ -12,25 +12,29 @@
     "dev": {
       "name": "dev",
       "command": "npm run dev",
-      "runAtStart": true,
       "preview": {
         "port": 5173
       }
     },
     "build": {
       "name": "build",
-      "command": "npm run build",
-      "runAtStart": false
+      "command": "npm run build"
     },
     "prepare": {
       "name": "prepare",
-      "command": "npm run prepare",
-      "runAtStart": false
+      "command": "npm run prepare"
     },
     "preview": {
       "name": "preview",
-      "command": "npm run preview",
-      "runAtStart": false
+      "command": "npm run preview"
+    },
+    "storybook": {
+      "name": "preview",
+      "command": "npm run storybook",
+      "runAtStart": true,
+      "preview": {
+        "port": 6006
+      }
     }
   }
 }

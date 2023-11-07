@@ -7,8 +7,10 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className="App" onClick={() => setCount(count + 1)}>
       <Button />
+      <hr style={{ marginTop: 20 }} />
+      <span>total: {count}</span>
     </div>
   );
 }
