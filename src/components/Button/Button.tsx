@@ -1,6 +1,6 @@
 import { ReactNode, useCallback } from "react";
 // import "../../index.css";
-import "./Button.css";
+import "./Button.scss";
 
 interface Props {
   children?: ReactNode;

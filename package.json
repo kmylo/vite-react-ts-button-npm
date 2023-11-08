@@ -27,7 +27,9 @@
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "tktr": "npx token-transformer input-design-tokens.json tokens/tokens.json --resolveReferences=false --expandTypography=true --expandShadow=true --expandComposition=true --expandBorder=true",
+    "sb": "style-dictionary build --config ./sd.config.json"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -48,7 +50,10 @@
     "eslint": "^8.53.0",
     "eslint-config-react-app": "^7.0.1",
     "postcss": "^8.4.20",
+    "sass": "^1.69.5",
     "storybook": "^7.5.3",
+    "style-dictionary": "^3.9.0",
+    "token-transformer": "^0.0.33",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vite-plugin-dts": "^1.7.1",

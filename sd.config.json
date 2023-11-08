@@ -1,0 +1,27 @@
+{
+  "source": ["tokens/*.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "prefix": "in2",
+      "buildPath": "src/scss/",
+      "files": [
+        {
+          "destination": "_variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    },
+    "css": {
+      "transformGroup": "css",
+      "prefix": "in2",
+      "buildPath": "src/css/",
+      "files": [
+        {
+          "destination": "_variables.css",
+          "format": "css/variables"
+        }
+      ]
+    }
+  }
+}
