@@ -8,6 +8,7 @@ interface Props {
   backgroundColor?: string;
   size?: "small" | "medium" | "large";
 }
+// const defaultVar = `bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded`;
 
 export const Button = ({
   children,
@@ -20,8 +21,6 @@ export const Button = ({
   const onClick = useCallback(() => {
     console.log("Vite + React + TypeScript + Tailwind = ❤️");
   }, []);
-
-  const defaultVar = `bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded`;
 
   return (
     <button
