@@ -4,7 +4,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/vite-react-ts-button-npm"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple template for a custom React component library",
   "type": "module",
   "main": "dist/index.umd.js",
@@ -32,6 +32,7 @@
     "sb": "style-dictionary build --config ./sd.config.json"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.2.4"
@@ -40,6 +41,7 @@
     "@storybook/addon-actions": "^7.5.3",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-viewport": "^7.5.3",
     "@storybook/preset-create-react-app": "^7.5.3",
     "@storybook/react": "^7.5.3",
     "@storybook/react-vite": "^7.5.3",

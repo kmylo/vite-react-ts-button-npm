@@ -1,28 +1,23 @@
-// @import "/src/tokens/index.scss";
-// @import "./button.tokens.scss";
 @import "../../css/_variables.css";
 
 .in2-button {
   background-color: var(--in2-light-button-button-brand-01);
   color: var(--in2-light-text-text-primary);
-  cursor: pointer;
-  // display: inline-block;
-  // position: relative;
-  display: flex;
-  padding: var(--in2-spacing-block-spacing-03, 8px) 16px;
-  align-items: center;
-  gap: 10px;
-  border: 0;
-  // padding: 20px;
+  // padding: var(--in2-spacing-block-spacing-03, 8px) 16px;
+  padding: 12px 24px;
   font-family: var(--in2-font-families-space-grotesk);
   border-radius: var(--in2-border-03);
 
-  &--primary {
-    // color: var(--in2-button-primary-text-color);
-    // background-color: pink;
-    // background-color: var(--in2-button-primary-bg);
-    // transition: var(--in2-button-transition);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  border: 0;
+  font-weight: 500;
+  line-height: 24px; /* 150%*/
+  justify-content: center;
 
+  &--primary {
     &:hover {
       // light/button/button-hover-brand-01
       background-color: var(--in2-light-button-button-hover-brand-01);
@@ -38,10 +33,7 @@
   }
 
   &--secondary {
-    // color: var(--in2-button-secondary-text-color);
-    // background-color: var(--in2-button-secondary-bg);
     background-color: var(--in2-light-button-button-brand-02);
-    // background-color: blue;
     color: var(--in2-light-text-text-on-color);
     // box-shadow: 0px 0px 0px 1px inset var(--in2-button-secondary-border);
 
@@ -70,7 +62,12 @@
     }
   }
 
+  &--fullWidth {
+    width: 100%;
+  }
+
   &--small {
+    padding: 8px 12px;
     // padding: var(--in2-button-small-pv) var(--in2-button-small-ph);
   }
 
@@ -79,6 +76,7 @@
   }
 
   &--large {
+    padding: 20px 24px;
     // padding: var(--in2-button-large-pv) var(--in2-button-large-ph);
   }
 

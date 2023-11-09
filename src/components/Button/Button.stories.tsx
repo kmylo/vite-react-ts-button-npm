@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 
 import { Button } from "./Button";
 
@@ -8,8 +9,18 @@ const meta = {
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
-    layout: "centered",
+    // layout: "centered",
+    // layout: "fullscreen",
+    viewport: {
+      //👇 The viewports you want to use
+      viewports: INITIAL_VIEWPORTS,
+      //👇 Your own default viewport
+      // defaultViewport: "iphone6",
+    },
   },
+  // argTypes: {
+
+  //   }
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
@@ -23,6 +34,7 @@ export const Primary: Story = {
   args: {
     primary: true,
     children: "Button Primary",
+    // fullWidth: true,
   },
 };
 
@@ -43,5 +55,13 @@ export const Small: Story = {
   args: {
     size: "small",
     children: "Button Small",
+  },
+};
+
+export const MyStory: Story = {
+  parameters: {
+    viewport: {
+      defaultViewport: "iphonex",
+    },
   },
 };

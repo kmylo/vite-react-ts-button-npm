@@ -6,14 +6,15 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/preset-scss",
+    "@storybook/addon-viewport",
   ],
 
   framework: {
     name: "@storybook/react-vite",
-    options: {}
+    options: {},
   },
 
   docs: {
-    autodocs: true
-  }
+    autodocs: true,
+  },
 };

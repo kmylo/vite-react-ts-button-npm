@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App" onClick={() => setCount(count + 1)}>
-      <Button />
+      <Button fullWidth />
       <hr style={{ marginTop: 20 }} />
       <span>total: {count}</span>
     </div>
