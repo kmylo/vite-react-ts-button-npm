@@ -17,6 +17,11 @@ const meta = {
       //👇 Your own default viewport
       // defaultViewport: "iphone6",
     },
+    docs: {
+      story: { inline: true }, // render the story in an iframe
+      // canvas: { sourceState: "shown" }, // start with the source open
+      source: { type: "code" }, // forces the raw source code (rather than the rendered JSX).
+    },
   },
   // argTypes: {
 
@@ -34,7 +39,6 @@ export const Primary: Story = {
   args: {
     primary: true,
     children: "Button Primary",
-    // fullWidth: true,
   },
 };
 
@@ -58,7 +62,7 @@ export const Small: Story = {
   },
 };
 
-export const MyStory: Story = {
+export const ViewPort: Story = {
   parameters: {
     viewport: {
       defaultViewport: "iphonex",

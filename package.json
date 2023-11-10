@@ -4,7 +4,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/vite-react-ts-button-npm"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple template for a custom React component library",
   "type": "module",
   "main": "dist/index.umd.js",
@@ -29,7 +29,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "tktr": "npx token-transformer input-design-tokens.json tokens/tokens.json --resolveReferences=false --expandTypography=true --expandShadow=true --expandComposition=true --expandBorder=true",
-    "sb": "style-dictionary build --config ./sd.config.json"
+    "sb": "style-dictionary build --config ./sd.config.json",
+    "tokens": "npm run sb && npm run tktr"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
@@ -39,10 +40,12 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^7.5.3",
+    "@storybook/addon-docs": "^7.5.3",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
     "@storybook/addon-viewport": "^7.5.3",
     "@storybook/preset-create-react-app": "^7.5.3",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^7.5.3",
     "@storybook/react-vite": "^7.5.3",
     "@types/react": "^18.0.26",

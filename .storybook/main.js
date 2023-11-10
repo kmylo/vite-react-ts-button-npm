@@ -7,6 +7,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-scss",
     "@storybook/addon-viewport",
+    '@storybook/addon-docs',
   ],
 
   framework: {
